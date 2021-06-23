@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MovieRow from './MovieRow';
+import './index.css';
 import $ from "jquery";
 class App extends Component
 {
@@ -16,7 +17,7 @@ class App extends Component
                 movieRows.push(movieRow);
             })
             this.state={rows:movieRows}*/
-            this.performSearch("avenger");
+            this.performSearch("avengers");
     }
         performSearch(searchTerm){
             const urlString="https://api.themoviedb.org/3/search/movie?query=marvel&api_key=1b5adf76a72a13bad99b8fc0c68cb085&query=" + searchTerm;
@@ -44,27 +45,18 @@ class App extends Component
     render(){
         return(
             <>
-        <div className="App" style={{color:'white',backgroundColor:'#000',fontSize:'18px',paddingLeft:16,display:'block',paddingTop:8, paddingBottom:8}}>
-            <table>
-                <tbody>
-                <tr>
-                    <td>
-                    <img alt="my pic" width='50' height='50' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlZEfieWR2cXzrpmOpKphcAYN4PXIDy3fEg&usqp=CAU"/>
-                    </td>
-                    <td style={{paddingLeft:10}}>
-                       <h1> MoviesDbSearch</h1>
-                    </td>
-                </tr>
-                
-                </tbody>  
-            </table>
+             <div className="App">
+                 <div className="ting">
+                    <img alt="my pic" className="img" width='50' height='50' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlZEfieWR2cXzrpmOpKphcAYN4PXIDy3fEg&usqp=CAU"/>
+                     <h1 className="h1"> Movie Review</h1>
+                      </div>
             
-            </div>
-            <div>
-                <input type="text" placeholder="Enter Movie Name" onChange={this.searchChangeHandler.bind(this )} style={{width:"98%",paddingRight:16,paddingLeft:16,display:'block',
-                fontSize:"24px",paddingBottom:8,paddingTop:8, marginTop:5}}/>           
+            
+            <div class="champ">
+                <input type="text" className="search" placeholder="Search Movie" onChange={this.searchChangeHandler.bind(this )} />           
                  {this.state.rows}       
-                 </div>
+            </div>
+            </div>
             </>
         );
     }
