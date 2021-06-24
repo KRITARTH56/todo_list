@@ -29,7 +29,7 @@ h1{
 input{
   padding:10px;
   padding-left:80px;
-  margin-left:10px;
+  margin-left:20px;
   margin-top:40px;
   border:2px solid black;
   border-radius:8px;
@@ -51,9 +51,9 @@ input{
 ul{
   list-style:none;
   background-color:#eabfff;
-  width:320px;
+  width:350px;
   margin-top:10px;
-  margin-left:10px;
+  margin-left:20px;
   
 }
 li{
@@ -84,6 +84,9 @@ li{
   {
     max-width:500px;
 }
+.btn1:hover{
+  background-color:purple;
+}
 }
 li{
   border:3px solid black;
@@ -94,6 +97,16 @@ li{
   .App
   {
     max-width:400px;
+    width:100%;
+  margin:auto;
+  padding:20px;
+  background:#fff;
+  box-shadow:1px 1px 2px rgba(0,0,0,0.125);
+  height:500px;
+  margin-top:100px;
+  border-radius:15px;
+  background-color:#A800A8;
+  overflow-y:auto;
 }
 input{
   padding:10px;
@@ -109,15 +122,28 @@ li{
   border:3px solid black;
   font-size:30px;
 }
+.btn1:hover{
+  background-color:purple;
+}
 }
 @media only screen and (max-width: 400px)
 {
   .App
   {
     max-width:300px;
+    width:100%;
+    margin:auto;
+    padding:20px;
+    background:#fff;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.125);
+    height:500px;
+    margin-top:100px;
+    border-radius:15px;
+    background-color:#A800A8;
+    overflow-y:auto;
 }
 input{
-  padding:10px;
+  padding:3px;
   margin-top:40px;
   margin-left:-10px;
   border:2px solid black;
@@ -136,11 +162,14 @@ input{
 ul{
   list-style:none;
   background-color:#eabfff;
-  width:320px;
+  width:300px;
   margin-top:10px;
   margin-left:-10px;
   
 
+}
+.btn1:hover{
+  background-color:purple;
 }
 li{
   border:3px solid black;
@@ -170,11 +199,21 @@ li{
   .App
   {
     max-width:250px;
+    width:100%;
+  margin:auto;
+  padding:20px;
+  background:#fff;
+  box-shadow:1px 1px 2px rgba(0,0,0,0.125);
+  height:500px;
+  margin-top:100px;
+  border-radius:15px;
+  background-color:#A800A8;
+  overflow-y:auto;
 }
 input{
-  padding:10px;
+  padding:2px;
   margin-top:60px;
-  margin-left:-10px;
+  margin-left:-5px;
   border:2px solid black;
   border-radius:8px;
   font-size:15px;
@@ -194,14 +233,14 @@ ul{
   background-color:#eabfff;
   width:340px;
   margin-top:10px;
-  margin-left:-10px;
+  margin-left:-5px;
   
 
 }
 li{
   border:3px solid black;
   font-size:20px;
-  width:120%;
+  width:100%;
   text-align:center;
   padding:10px;
   border-radius:3px;
