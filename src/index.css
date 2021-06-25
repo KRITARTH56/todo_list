@@ -3,7 +3,7 @@
   margin:0;
 }
   body{
-    background-color:#fff;
+    background-color:#013220;
   }
   .App
 {
@@ -16,29 +16,46 @@
   height:500px;
   margin-top:100px;
   border-radius:15px;
-  background-color:#A800A8;
+  background-color:orchid;
   overflow-y:auto;
 }
 h1{
   text-align:center;
-  font-size:40px;
+  font-size:50px;
   color:#fff;
 }
 .wrap{
   display:flex;}
 input{
   padding:10px;
-  padding-left:80px;
-  margin-left:20px;
+  width:350px;
+  margin-left:30px;
   margin-top:40px;
   border:2px solid black;
   border-radius:8px;
   font-size:20px;
   text-align:center;
 }
+.grid
+{
+  display:grid;
+  background-color:burlywood;
+  grid-template-rows:repeat(2,max-content);
+  margin-top:20px;
+  grid-column-gap:20px;
+  width:350px;
+  margin-left:30px;
+  overflow-x:auto;
+  font-size:20px;
+  padding:10px;
+  border:2px solid black;
+  justify-content: center;
+  text-align: justify;
+  
+}
 .btn1{
   font-size:20px;
-  padding:15px;
+  padding:10px;
   background-color:#008000;
   color:white;
   border:2px solid black;
@@ -48,29 +65,13 @@ input{
 .btn1:hover{
   background-color:purple;
 }
-ul{
-  list-style:none;
-  background-color:#eabfff;
-  width:350px;
-  margin-top:10px;
-  margin-left:20px;
-  
-}
-li{
-  border:3px solid black;
-  font-size:20px;
-  width:100%;
-  text-align:center;
-  padding:15px;
-  border-radius:3px;
-  overflow-x:auto;
-}
+
 .in
 {display:flex;}
 .btn3{
-  padding:20px;
-  margin-top:15px;
-  border-radius:15px;
+  padding:10px;
+  margin-top:17px;
+  border-radius:10px;
   background-color:orange;
   color:black;
 }
@@ -78,185 +79,86 @@ li{
   background-color:#b30000;
   color:white
 }
-@media only screen and (max-width: 900px)
-{
-  .App
-  {
-    max-width:500px;
-}
-.btn1:hover{
-  background-color:purple;
-}
-}
-li{
-  border:3px solid black;
-  font-size:30px;
-}
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 510px)
 {
   .App
   {
     max-width:400px;
-    width:100%;
-  margin:auto;
-  padding:20px;
-  background:#fff;
-  box-shadow:1px 1px 2px rgba(0,0,0,0.125);
-  height:500px;
-  margin-top:100px;
-  border-radius:15px;
-  background-color:#A800A8;
-  overflow-y:auto;
+    margin-top:70px;
 }
-input{
-  padding:10px;
-  padding-left:40px;
-  margin-left:5px;
-  margin-top:40px;
-  border:2px solid black;
-  border-radius:8px;
-  font-size:20px;
-  text-align:center;
+
+  input{
+    margin-left:20px;
+  }
+  .grid
+  {
+    
+    margin-left:20px;
+  }
+  
 }
-li{
-  border:3px solid black;
-  font-size:30px;
-}
-.btn1:hover{
-  background-color:purple;
-}
-}
+
 @media only screen and (max-width: 400px)
 {
   .App
   {
-    max-width:300px;
-    width:100%;
-    margin:auto;
-    padding:20px;
-    background:#fff;
-    box-shadow:1px 1px 2px rgba(0,0,0,0.125);
-    height:500px;
-    margin-top:100px;
-    border-radius:15px;
-    background-color:#A800A8;
-    overflow-y:auto;
+    max-width:350px;
+    margin-top:50px;
 }
-input{
-  padding:3px;
-  margin-top:40px;
-  margin-left:-10px;
-  border:2px solid black;
-  border-radius:8px;
-  font-size:18px;
-  text-align:center;
-}
-.btn1{
-  padding:15px;
-  font-size:20px;
-  background-color:#008000;
-  color:white;
-  border:2px solid black;
-  border-radius:15px;
-}
-ul{
-  list-style:none;
-  background-color:#eabfff;
-  width:300px;
-  margin-top:10px;
-  margin-left:-10px;
-  
 
+  input{
+    margin-left:10px;
+    width:300px;
+    padding:10px;
+  }
+  .grid
+  {
+    
+    margin-left:10px;
+    width:300px;
+    padding:10px
+  }
+  
 }
-.btn1:hover{
-  background-color:purple;
+@media only screen and (max-width: 350px)
+{
+  .App
+  {
+    max-width:300px;
 }
-li{
-  border:3px solid black;
-  font-size:30px;
-  width:100%;
-  text-align:center;
-  padding:10px;
-  border-radius:3px;
-  overflow-x:auto;
+
+  input{
+    margin-left:0px;
+    width:230px;
+    padding:5px;
+  }
+  .grid
+  {
+    
+    margin-left:0px;
+    width:250px;
+    padding:5px
+  }
+  
 }
-.btn1:hover{
-  background-color:purple;
-}
-.in
-{display:flex;}
-.btn3{
-  padding:15px;
-  font-size:20px;
-  margin-top:10px;
-  border-radius:15px;
-  background-color:orange;
-  color:black;
-}
-}
+
 @media only screen and (max-width: 300px)
 {
   .App
   {
     max-width:250px;
-    width:100%;
-  margin:auto;
-  padding:20px;
-  background:#fff;
-  box-shadow:1px 1px 2px rgba(0,0,0,0.125);
-  height:500px;
-  margin-top:100px;
-  border-radius:15px;
-  background-color:#A800A8;
-  overflow-y:auto;
 }
-input{
-  padding:2px;
-  margin-top:60px;
-  margin-left:-5px;
-  border:2px solid black;
-  border-radius:8px;
-  font-size:15px;
-  text-align:center;
-}
-.btn1{
-  padding:10px;
-  font-size:15px;
-  background-color:#008000;
-  color:white;
-  border:2px solid black;
-  border-radius:15px;
-  margin-top:60px;;
-}
-ul{
-  list-style:none;
-  background-color:#eabfff;
-  width:340px;
-  margin-top:10px;
-  margin-left:-5px;
-  
 
-}
-li{
-  border:3px solid black;
-  font-size:20px;
-  width:100%;
-  text-align:center;
-  padding:10px;
-  border-radius:3px;
-  overflow-x:auto;
-}
-.btn1:hover{
-  background-color:purple;
-}
-.in
-{display:flex;}
-.btn3{
-  padding:10px;
-  font-size:20px;
-  margin-top:10px;
-  border-radius:15px;
-  background-color:orange;
-  color:black;
-}
+  input{
+    margin-left:-10px;
+    width:200px;
+  }
+  .grid
+  {
+    
+    margin-left:-10px;
+    width:240px;
+    padding:5px
+  }
+  
 }

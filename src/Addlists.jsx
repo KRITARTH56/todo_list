@@ -4,9 +4,9 @@ const Addlists=(props)=>{
     return( 
     <>
     <div className="in" >
-    
-    <ul><li>{props.text}</li>
-    </ul>
+    <div className="grid">
+    {props.text}
+    </div>
     <div className="btn2">
     <button className="btn3" onClick={()=>{props.onSelect(props.id);}}>x</button>
     </div>
